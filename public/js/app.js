@@ -10,8 +10,8 @@ function airlineRouter ($routeProvider) {
 		controller: 'AirportCtrl'
 		})
 		.when('/flights', {
-		 template: '<h3>Flights</h3> {{airports | json}}',
-		 controller: 'FlightsCtrl'})
+		templateUrl: 'partials/flights.html', 
+		controller: 'FlightsCtrl'})
 		.when('/reservations', {
 		 template: '<h3>Your Reservations</h3> {{airports | json}}',
 		 controller: 'ReservationsCtrl'});
