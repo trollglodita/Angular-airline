@@ -4,6 +4,8 @@
 	<h4>Destinations</h4>
 
 	<ul>
-		<li ng-repeat="destination in currentAirport.destinations">{{destination}}</li>
+		<li ng-repeat="destination in currentAirport.destinations">
+		<a ng-ref="#/airports/{{destinations}}">{{destination}}</a>
+		</li>
 	</ul>
 </div>
