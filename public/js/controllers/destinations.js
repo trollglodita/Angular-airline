@@ -5,7 +5,7 @@ function DestinationsCtrl ($scope, Airport) {
   $scope.currentAirport = null;
 
   $scope.setAirport = function (code) {
-    $scope.currentAirport = $scope.airports[code];
+    $scope.currentAirport = Airport.get({airportCode: code});
   };
 
   $scope.airports = Airport.query();
